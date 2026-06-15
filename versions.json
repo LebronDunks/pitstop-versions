@@ -1,4 +1,253 @@
 {
-  "nvidia_approved": "572.83",
-  "note": "Approved for all Podium 1 rigs"
+  "_meta": {
+    "schema_version": "2.0",
+    "last_updated": "2025-06-15",
+    "updated_by": "Podium 1 Racing",
+    "notes": "Approved versions for all Podium 1 sim rigs. Update this file to push new approved versions fleet-wide."
+  },
+
+  "components": {
+
+    "nvidia_driver": {
+      "label": "NVIDIA GPU Driver",
+      "approved_version": "572.83",
+      "minimum_version": "560.00",
+      "update_url": "https://www.nvidia.com/en-us/drivers/",
+      "notes": "Approved after vetting for iRacing + ACC stability. Do not update to 576.x until further notice.",
+      "check_method": "nvidia_smi"
+    },
+
+    "windows_update": {
+      "label": "Windows Update",
+      "policy": "auto",
+      "notes": "All pending Windows updates should be applied. Red if more than 7 days overdue.",
+      "check_method": "wua_api"
+    },
+
+    "asetek_racehub": {
+      "label": "Asetek RaceHub",
+      "approved_version": "1.6.2",
+      "minimum_version": "1.5.0",
+      "exe_name": "RaceHub.exe",
+      "registry_key": "HKLM\\SOFTWARE\\Asetek\\RaceHub",
+      "registry_value": "Version",
+      "install_path_hint": "C:\\Program Files\\Asetek\\RaceHub",
+      "update_url": "https://www.asetek.com/sim-sports/software/",
+      "notes": ""
+    },
+
+    "moza_pithouse": {
+      "label": "MOZA Pit House",
+      "approved_version": "1.5.0",
+      "minimum_version": "1.4.0",
+      "exe_name": "PitHouse.exe",
+      "registry_key": "HKLM\\SOFTWARE\\MOZA Racing\\PitHouse",
+      "registry_value": "Version",
+      "install_path_hint": "C:\\Program Files\\MOZA Racing\\PitHouse",
+      "update_url": "https://www.mozaracing.com/pit-house",
+      "notes": ""
+    },
+
+    "simucube_truedrive": {
+      "label": "Simucube True Drive",
+      "approved_version": "2025.3",
+      "minimum_version": "2024.12",
+      "exe_name": "TrueDrive.exe",
+      "registry_key": "HKLM\\SOFTWARE\\Granite Devices\\TrueDrive",
+      "registry_value": "Version",
+      "install_path_hint": "C:\\Program Files\\Granite Devices\\TrueDrive",
+      "update_url": "https://www.simucu.be/truedrive",
+      "notes": ""
+    },
+
+    "heusinkveld_app": {
+      "label": "Heusinkveld App",
+      "approved_version": "3.8.1",
+      "minimum_version": "3.7.0",
+      "exe_name": "HeusinkveldApp.exe",
+      "registry_key": "HKLM\\SOFTWARE\\Heusinkveld\\HeusinkveldApp",
+      "registry_value": "Version",
+      "install_path_hint": "C:\\Program Files\\Heusinkveld",
+      "update_url": "https://heusinkveld.com/software/",
+      "notes": ""
+    },
+
+    "simhub": {
+      "label": "SimHub",
+      "approved_version": "9.4.2",
+      "minimum_version": "9.0.0",
+      "exe_name": "SimHubWPF.exe",
+      "registry_key": "HKLM\\SOFTWARE\\SimHub",
+      "registry_value": "Version",
+      "install_path_hint": "C:\\Program Files (x86)\\SimHub",
+      "update_url": "https://www.simhubdash.com/",
+      "notes": ""
+    },
+
+    "streamdeck": {
+      "label": "Stream Deck",
+      "optional": true,
+      "approved_version": "6.8.0",
+      "minimum_version": "6.5.0",
+      "exe_name": "StreamDeck.exe",
+      "registry_key": "HKLM\\SOFTWARE\\Elgato Systems GmbH\\StreamDeck",
+      "registry_value": "Version",
+      "install_path_hint": "C:\\Program Files\\Elgato\\StreamDeck",
+      "update_url": "https://www.elgato.com/downloads",
+      "notes": "Optional add-on. Only checked on rigs where installed."
+    },
+
+    "sensit_haptics": {
+      "label": "Sensit Seat Haptics",
+      "optional": true,
+      "approved_version": "2.1.0",
+      "minimum_version": "2.0.0",
+      "exe_name": "SensitApp.exe",
+      "registry_key": "HKLM\\SOFTWARE\\Sensit\\SensitApp",
+      "registry_value": "Version",
+      "install_path_hint": "C:\\Program Files\\Sensit",
+      "update_url": "https://sensit.io/software/",
+      "notes": "Optional add-on. Only checked on rigs where installed."
+    },
+
+    "iracing": {
+      "label": "iRacing",
+      "approved_version": "2025.05.01",
+      "minimum_version": "2025.01.01",
+      "exe_name": "iRacingSim64DX11.exe",
+      "version_file": "C:\\Program Files (x86)\\iRacing\\version.txt",
+      "install_path_hint": "C:\\Program Files (x86)\\iRacing",
+      "update_url": "https://members.iracing.com/",
+      "update_action": "launch_iracing_updater",
+      "notes": "iRacing auto-updates on launch. If outdated, prompt user to launch iRacing to trigger update."
+    },
+
+    "assetto_corsa": {
+      "label": "Assetto Corsa",
+      "approved_version": "1.16.4",
+      "minimum_version": "1.16.0",
+      "steam_app_id": "244210",
+      "check_method": "steam_buildid",
+      "update_action": "steam_update",
+      "notes": "Checked via Steam build ID."
+    },
+
+    "assetto_corsa_competizione": {
+      "label": "Assetto Corsa Competizione",
+      "approved_version": "1.10.2",
+      "minimum_version": "1.10.0",
+      "steam_app_id": "805550",
+      "check_method": "steam_buildid",
+      "update_action": "steam_update",
+      "notes": "Checked via Steam build ID."
+    },
+
+    "automobilista2": {
+      "label": "Automobilista 2",
+      "approved_version": "1.6.0",
+      "minimum_version": "1.5.0",
+      "steam_app_id": "1066890",
+      "check_method": "steam_buildid",
+      "update_action": "steam_update",
+      "notes": "Checked via Steam build ID."
+    }
+
+  },
+
+  "profiles": {
+    "asetek-build": {
+      "label": "Asetek Build",
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "asetek_racehub",
+        "simhub",
+        "iracing",
+        "assetto_corsa",
+        "assetto_corsa_competizione",
+        "automobilista2"
+      ]
+    },
+    "moza-build": {
+      "label": "MOZA Build",
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "moza_pithouse",
+        "simhub",
+        "iracing",
+        "assetto_corsa",
+        "assetto_corsa_competizione",
+        "automobilista2"
+      ]
+    },
+    "simucube-build": {
+      "label": "Simucube Build",
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "simucube_truedrive",
+        "simhub",
+        "iracing",
+        "assetto_corsa",
+        "assetto_corsa_competizione",
+        "automobilista2"
+      ]
+    },
+    "asetek-heusinkveld-build": {
+      "label": "Asetek + Heusinkveld Build",
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "asetek_racehub",
+        "heusinkveld_app",
+        "simhub",
+        "iracing",
+        "assetto_corsa",
+        "assetto_corsa_competizione",
+        "automobilista2"
+      ]
+    },
+    "moza-heusinkveld-build": {
+      "label": "MOZA + Heusinkveld Build",
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "moza_pithouse",
+        "heusinkveld_app",
+        "simhub",
+        "iracing",
+        "assetto_corsa",
+        "assetto_corsa_competizione",
+        "automobilista2"
+      ]
+    },
+    "simucube-heusinkveld-build": {
+      "label": "Simucube + Heusinkveld Build",
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "simucube_truedrive",
+        "heusinkveld_app",
+        "simhub",
+        "iracing",
+        "assetto_corsa",
+        "assetto_corsa_competizione",
+        "automobilista2"
+      ]
+    }
+  },
+
+  "addons": {
+    "streamdeck": {
+      "label": "Stream Deck",
+      "component": "streamdeck"
+    },
+    "sensit": {
+      "label": "Sensit Seat Haptics",
+      "component": "sensit_haptics"
+    }
+  },
+
+  "alerts": []
 }
