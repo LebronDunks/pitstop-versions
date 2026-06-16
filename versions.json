@@ -113,6 +113,13 @@
   },
 
   "profiles": {
+    "dev": {
+      "label": "Dev Machine",
+      "components": [
+        "nvidia_driver",
+        "windows_update"
+      ]
+    },
     "asetek-build": {
       "label": "Asetek Build",
       "components": [
