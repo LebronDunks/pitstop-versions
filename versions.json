@@ -1,7 +1,7 @@
 {
   "_meta": {
     "schema_version": "2.0",
-    "last_updated": "2025-06-15",
+    "last_updated": "2026-06-16",
     "updated_by": "Podium 1 Racing",
     "notes": "Approved versions for all Podium 1 sim rigs. Update this file to push new approved versions fleet-wide."
   },
@@ -108,48 +108,6 @@
       "install_path_hint": "C:\\Program Files\\Sensit",
       "update_url": "https://sensit.io/software/",
       "notes": "Optional add-on. Only checked on rigs where installed."
-    },
-
-    "iracing": {
-      "label": "iRacing",
-      "approved_version": "2025.05.01",
-      "minimum_version": "2025.01.01",
-      "exe_name": "iRacingSim64DX11.exe",
-      "version_file": "C:\\Program Files (x86)\\iRacing\\version.txt",
-      "install_path_hint": "C:\\Program Files (x86)\\iRacing",
-      "update_url": "https://members.iracing.com/",
-      "update_action": "launch_iracing_updater",
-      "notes": "iRacing auto-updates on launch. If outdated, prompt user to launch iRacing to trigger update."
-    },
-
-    "assetto_corsa": {
-      "label": "Assetto Corsa",
-      "approved_version": "1.16.4",
-      "minimum_version": "1.16.0",
-      "steam_app_id": "244210",
-      "check_method": "steam_buildid",
-      "update_action": "steam_update",
-      "notes": "Checked via Steam build ID."
-    },
-
-    "assetto_corsa_competizione": {
-      "label": "Assetto Corsa Competizione",
-      "approved_version": "1.10.2",
-      "minimum_version": "1.10.0",
-      "steam_app_id": "805550",
-      "check_method": "steam_buildid",
-      "update_action": "steam_update",
-      "notes": "Checked via Steam build ID."
-    },
-
-    "automobilista2": {
-      "label": "Automobilista 2",
-      "approved_version": "1.6.0",
-      "minimum_version": "1.5.0",
-      "steam_app_id": "1066890",
-      "check_method": "steam_buildid",
-      "update_action": "steam_update",
-      "notes": "Checked via Steam build ID."
     }
 
   },
@@ -161,11 +119,7 @@
         "nvidia_driver",
         "windows_update",
         "asetek_racehub",
-        "simhub",
-        "iracing",
-        "assetto_corsa",
-        "assetto_corsa_competizione",
-        "automobilista2"
+        "simhub"
       ]
     },
     "moza-build": {
@@ -174,11 +128,7 @@
         "nvidia_driver",
         "windows_update",
         "moza_pithouse",
-        "simhub",
-        "iracing",
-        "assetto_corsa",
-        "assetto_corsa_competizione",
-        "automobilista2"
+        "simhub"
       ]
     },
     "simucube-build": {
@@ -187,11 +137,7 @@
         "nvidia_driver",
         "windows_update",
         "simucube_truedrive",
-        "simhub",
-        "iracing",
-        "assetto_corsa",
-        "assetto_corsa_competizione",
-        "automobilista2"
+        "simhub"
       ]
     },
     "asetek-heusinkveld-build": {
@@ -201,11 +147,7 @@
         "windows_update",
         "asetek_racehub",
         "heusinkveld_app",
-        "simhub",
-        "iracing",
-        "assetto_corsa",
-        "assetto_corsa_competizione",
-        "automobilista2"
+        "simhub"
       ]
     },
     "moza-heusinkveld-build": {
@@ -215,11 +157,7 @@
         "windows_update",
         "moza_pithouse",
         "heusinkveld_app",
-        "simhub",
-        "iracing",
-        "assetto_corsa",
-        "assetto_corsa_competizione",
-        "automobilista2"
+        "simhub"
       ]
     },
     "simucube-heusinkveld-build": {
@@ -229,11 +167,7 @@
         "windows_update",
         "simucube_truedrive",
         "heusinkveld_app",
-        "simhub",
-        "iracing",
-        "assetto_corsa",
-        "assetto_corsa_competizione",
-        "automobilista2"
+        "simhub"
       ]
     }
   },
