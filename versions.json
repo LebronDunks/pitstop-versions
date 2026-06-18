@@ -38,7 +38,7 @@
 
     "moza_pithouse": {
       "label": "MOZA Pit House",
-      "approved_version": "1.3.4.39",
+      "approved_version": "1.3.9.39",
       "minimum_version": "1.3.9.39",
       "exe_name": "MOZA Pit House.exe",
       "registry_key": "HKCU\\SOFTWARE\\MOZA\\PitHouse",
