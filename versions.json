@@ -44,7 +44,7 @@
       "registry_key": "HKCU\\SOFTWARE\\MOZA\\PitHouse",
       "registry_value": "path",
       "install_path_hint": "C:\\Program Files (x86)\\MOZA Pit House\\bin",
-      "update_url": "C:\Program Files (x86)\MOZA Pit House",
+      "update_url": "C:\\Program Files (x86)\\MOZA Pit House\\bin\\MOZA Pit House.exe",
       "notes": "Registry stores exe path under HKCU. Version read directly from exe."
     },
 
