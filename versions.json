@@ -318,3 +318,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"all-apps-build": {
+  "label": "All Apps Test",
+  "components": [
+    "nvidia_driver",
+    "windows_update",
+    "asetek_racehub",
+    "moza_pithouse",
+    "simucube_tuner",
+    "fanatec_app",
+    "heusinkveld_app",
+    "simhub",
+    "streamdeck",
+    "sensit_haptics"
+  ]
+}
