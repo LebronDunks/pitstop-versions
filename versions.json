@@ -72,10 +72,10 @@
       "label": "Heusinkveld App",
       "approved_version": "3.8.1",
       "minimum_version": "3.7.0",
-      "exe_name": "HeusinkveldApp.exe",
+      "exe_name": "SmartControl.exe",
       "registry_key": "HKLM\\SOFTWARE\\Heusinkveld\\HeusinkveldApp",
       "registry_value": "Version",
-      "install_path_hint": "C:\\Program Files\\Heusinkveld",
+      "install_path_hint": "C:\\Program Files\\Heusinkveld\\SmartControl",
       "update_url": "https://heusinkveld.com/smartcontrol/",
       "notes": ""
     },
