@@ -22,10 +22,10 @@
     },
     "asetek_racehub": {
       "label": "Asetek RaceHub",
-      "approved_version": "6000.3.10.14901004",
-      "minimum_version": "6000.3.10.14901004",
-      "exe_name": "RaceHub™.exe",
-      "install_path_hint": "C:\\Program Files\\Asetek SimSports\\RaceHub™\\Application Folder\\Build",
+      "approved_version": "4.4.7",
+      "minimum_version": "4.4.7",
+      "exe_name": "RaceHub\u2122.exe",
+      "install_path_hint": "C:\\Program Files\\Asetek SimSports\\RaceHub\u2122\\Application Folder\\Build",
       "update_url": "https://www.asetek.com/simsports/racehub/",
       "notes": "No registry entry. Detected via exe path only. TM symbol in folder and exe name."
     },
@@ -71,7 +71,7 @@
     },
     "simhub": {
       "label": "SimHub",
-      "approved_version": "9.4.2",
+      "approved_version": "9.11.17",
       "minimum_version": "9.0.0",
       "exe_name": "SimHubWPF.exe",
       "registry_key": "HKLM\\SOFTWARE\\SimHub",
@@ -95,14 +95,12 @@
     "sensit_haptics": {
       "label": "Sensit Seat Haptics",
       "optional": true,
-      "approved_version": "2.1.0",
-      "minimum_version": "2.0.0",
-      "exe_name": "SensitApp.exe",
-      "registry_key": "HKLM\\SOFTWARE\\Sensit\\SensitApp",
-      "registry_value": "Version",
-      "install_path_hint": "C:\\Program Files\\Sensit",
+      "approved_version": "0.10.2",
+      "minimum_version": "0.10.2",
+      "exe_name": "simracing.exe",
+      "install_path_hint": "C:\\Program Files\\SensitHaptics SimRacing Cockpit",
       "update_url": "https://sensithaptics.com/pages/downloads",
-      "notes": "Optional add-on. Only checked on rigs where installed."
+      "notes": "No registry entry. Detected via exe path only. Install path: C:\\Program Files\\SensitHaptics SimRacing Cockpit"
     }
   },
   "profiles": {
