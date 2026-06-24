@@ -1,13 +1,11 @@
 {
   "_meta": {
     "schema_version": "2.0",
-    "last_updated": "2026-06-22",
+    "last_updated": "2026-06-24",
     "updated_by": "Podium 1 Racing",
     "notes": "Approved versions for all Podium 1 sim rigs. Update this file to push new approved versions fleet-wide."
   },
-
   "components": {
-
     "nvidia_driver": {
       "label": "NVIDIA GPU Driver",
       "approved_version": "610.62",
@@ -16,26 +14,21 @@
       "notes": "Approved after vetting for iRacing + ACC stability.",
       "check_method": "nvidia_smi"
     },
-
     "windows_update": {
       "label": "Windows Update",
       "policy": "auto",
       "notes": "All pending Windows updates should be applied.",
       "check_method": "wua_api"
     },
-
     "asetek_racehub": {
       "label": "Asetek RaceHub",
-      "approved_version": "4.4.7",
-      "minimum_version": "4.4.7",
-      "exe_name": "RaceHub.exe",
-      "registry_key": "HKLM\\SOFTWARE\\Asetek\\RaceHub",
-      "registry_value": "Version",
-      "install_path_hint": "C:\\Program Files\\Asetek\\RaceHub",
+      "approved_version": "6000.3.10.14901004",
+      "minimum_version": "6000.3.10.14901004",
+      "exe_name": "RaceHub™.exe",
+      "install_path_hint": "C:\\Program Files\\Asetek SimSports\\RaceHub™\\Application Folder\\Build",
       "update_url": "https://www.asetek.com/simsports/racehub/",
-      "notes": ""
+      "notes": "No registry entry. Detected via exe path only. TM symbol in folder and exe name."
     },
-
     "moza_pithouse": {
       "label": "MOZA Pit House",
       "approved_version": "1.3.9.36",
@@ -47,7 +40,6 @@
       "update_url": "C:\\Program Files (x86)\\MOZA Pit House\\bin\\MOZA Pit House.exe",
       "notes": "Registry stores exe path under HKCU. Version read directly from exe. Also covers MOZA pedals."
     },
-
     "simucube_tuner": {
       "label": "Simucube Tuner",
       "approved_version": "3.1.3",
@@ -57,7 +49,6 @@
       "update_url": "https://simucube.com/en-us/simucube-tuner-3-0-software/",
       "notes": "Version read from version file in install directory. Covers Simucube wheelbase and Active Pedals."
     },
-
     "fanatec_app": {
       "label": "Fanatec App",
       "approved_version": "1.5.1+2",
@@ -67,11 +58,10 @@
       "update_url": "https://www.fanatec.com/us/en/s/download-apps-driver",
       "notes": "Version read from exe. Required for all Fanatec hardware."
     },
-
     "heusinkveld_app": {
-      "label": "Heusinkveld SmartControl",
-      "approved_version": "1.0.0",
-      "minimum_version": "1.0.0",
+      "label": "Heusinkveld App",
+      "approved_version": "3.8.1",
+      "minimum_version": "3.7.0",
       "exe_name": "SmartControl.exe",
       "registry_key": "HKLM\\SOFTWARE\\Heusinkveld\\HeusinkveldApp",
       "registry_value": "Version",
@@ -79,7 +69,6 @@
       "update_url": "https://heusinkveld.com/smartcontrol/",
       "notes": ""
     },
-
     "simhub": {
       "label": "SimHub",
       "approved_version": "9.4.2",
@@ -91,7 +80,6 @@
       "update_url": "https://www.simhubdash.com/",
       "notes": ""
     },
-
     "streamdeck": {
       "label": "Stream Deck",
       "optional": true,
@@ -104,7 +92,6 @@
       "update_url": "https://www.elgato.com/downloads",
       "notes": "Optional add-on. Only checked on rigs where installed."
     },
-
     "sensit_haptics": {
       "label": "Sensit Seat Haptics",
       "optional": true,
@@ -117,16 +104,15 @@
       "update_url": "https://sensithaptics.com/pages/downloads",
       "notes": "Optional add-on. Only checked on rigs where installed."
     }
-
   },
-
   "profiles": {
-
     "dev": {
       "label": "Dev Machine",
-      "components": ["nvidia_driver", "windows_update"]
+      "components": [
+        "nvidia_driver",
+        "windows_update"
+      ]
     },
-
     "all-apps-build": {
       "label": "All Apps Test",
       "components": [
@@ -142,69 +128,125 @@
         "sensit_haptics"
       ]
     },
-
     "asetek-build": {
       "label": "Asetek + Heusinkveld",
-      "components": ["nvidia_driver", "windows_update", "asetek_racehub", "heusinkveld_app", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "asetek_racehub",
+        "heusinkveld_app",
+        "simhub"
+      ]
     },
-
     "asetek-moza-pedals-build": {
       "label": "Asetek + MOZA Pedals",
-      "components": ["nvidia_driver", "windows_update", "asetek_racehub", "moza_pithouse", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "asetek_racehub",
+        "moza_pithouse",
+        "simhub"
+      ]
     },
-
     "asetek-simucube-pedals-build": {
       "label": "Asetek + Simucube Pedals",
-      "components": ["nvidia_driver", "windows_update", "asetek_racehub", "simucube_tuner", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "asetek_racehub",
+        "simucube_tuner",
+        "simhub"
+      ]
     },
-
     "moza-build": {
       "label": "MOZA Wheelbase + Pedals",
-      "components": ["nvidia_driver", "windows_update", "moza_pithouse", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "moza_pithouse",
+        "simhub"
+      ]
     },
-
     "moza-heusinkveld-build": {
       "label": "MOZA + Heusinkveld",
-      "components": ["nvidia_driver", "windows_update", "moza_pithouse", "heusinkveld_app", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "moza_pithouse",
+        "heusinkveld_app",
+        "simhub"
+      ]
     },
-
     "moza-simucube-pedals-build": {
       "label": "MOZA + Simucube Pedals",
-      "components": ["nvidia_driver", "windows_update", "moza_pithouse", "simucube_tuner", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "moza_pithouse",
+        "simucube_tuner",
+        "simhub"
+      ]
     },
-
     "simucube-build": {
       "label": "Simucube Wheelbase + Pedals",
-      "components": ["nvidia_driver", "windows_update", "simucube_tuner", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "simucube_tuner",
+        "simhub"
+      ]
     },
-
     "simucube-heusinkveld-build": {
       "label": "Simucube + Heusinkveld",
-      "components": ["nvidia_driver", "windows_update", "simucube_tuner", "heusinkveld_app", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "simucube_tuner",
+        "heusinkveld_app",
+        "simhub"
+      ]
     },
-
     "simucube-moza-pedals-build": {
       "label": "Simucube + MOZA Pedals",
-      "components": ["nvidia_driver", "windows_update", "simucube_tuner", "moza_pithouse", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "simucube_tuner",
+        "moza_pithouse",
+        "simhub"
+      ]
     },
-
     "fanatec-build": {
       "label": "Fanatec + Heusinkveld",
-      "components": ["nvidia_driver", "windows_update", "fanatec_app", "heusinkveld_app", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "fanatec_app",
+        "heusinkveld_app",
+        "simhub"
+      ]
     },
-
     "fanatec-moza-pedals-build": {
       "label": "Fanatec + MOZA Pedals",
-      "components": ["nvidia_driver", "windows_update", "fanatec_app", "moza_pithouse", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "fanatec_app",
+        "moza_pithouse",
+        "simhub"
+      ]
     },
-
     "fanatec-simucube-pedals-build": {
       "label": "Fanatec + Simucube Pedals",
-      "components": ["nvidia_driver", "windows_update", "fanatec_app", "simucube_tuner", "simhub"]
+      "components": [
+        "nvidia_driver",
+        "windows_update",
+        "fanatec_app",
+        "simucube_tuner",
+        "simhub"
+      ]
     }
-
   },
-
   "addons": {
     "streamdeck": {
       "label": "Stream Deck",
@@ -215,6 +257,5 @@
       "component": "sensit_haptics"
     }
   },
-
   "alerts": []
 }
