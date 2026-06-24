@@ -95,8 +95,8 @@
     "sensit_haptics": {
       "label": "Sensit Seat Haptics",
       "optional": true,
-      "approved_version": "0.10.2",
-      "minimum_version": "0.10.2",
+      "approved_version": "0.10.3",
+      "minimum_version": "0.10.3",
       "exe_name": "simracing.exe",
       "install_path_hint": "C:\\Program Files\\SensitHaptics SimRacing Cockpit",
       "update_url": "https://sensithaptics.com/pages/downloads",
