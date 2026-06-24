@@ -26,8 +26,8 @@
 
     "asetek_racehub": {
       "label": "Asetek RaceHub",
-      "approved_version": "1.6.2",
-      "minimum_version": "1.5.0",
+      "approved_version": "4.4.7",
+      "minimum_version": "4.4.7",
       "exe_name": "RaceHub.exe",
       "registry_key": "HKLM\\SOFTWARE\\Asetek\\RaceHub",
       "registry_value": "Version",
