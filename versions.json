@@ -59,9 +59,9 @@
       "notes": "Version read from exe. Required for all Fanatec hardware."
     },
     "heusinkveld_app": {
-      "label": "Heusinkveld App",
-      "approved_version": "3.8.1",
-      "minimum_version": "3.7.0",
+      "label": "Heusinkveld SmartControl",
+      "approved_version": "1.0.0",
+      "minimum_version": "1.0.0",
       "exe_name": "SmartControl.exe",
       "registry_key": "HKLM\\SOFTWARE\\Heusinkveld\\HeusinkveldApp",
       "registry_value": "Version",
