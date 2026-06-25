@@ -24,10 +24,19 @@
       "label": "Asetek RaceHub",
       "approved_version": "4.4.7",
       "minimum_version": "4.4.7",
-      "exe_name": "RaceHub\u2122.exe",
-      "install_path_hint": "C:\\Program Files\\Asetek SimSports\\RaceHub\u2122\\Application Folder\\Build",
+      "exe_name": "RaceHub™.exe",
+      "install_path_hint": "C:\\Program Files\\Asetek SimSports\\RaceHub™\\Application Folder\\Build",
       "update_url": "https://www.asetek.com/simsports/racehub/",
-      "notes": "No registry entry. Detected via exe path only. TM symbol in folder and exe name."
+      "notes": "Version detected from firmware filename \"4.4.7 - Firmware Versions\" in Firmware Files folder. approved_firmware keys match partial component names from .bin filenames.",
+      "approved_firmware": {
+        "SteeringWheel": "1.13.17",
+        "SteeringWheelDisplayInvicta": "1.18.130",
+        "SteeringWheelInitium": "1.9.66",
+        "Wheelbase": "1.21.233",
+        "WheelbaseInitium": "2.0.38",
+        "Pedal": "2.6.4",
+        "PedalInitium": "1.5.15"
+      }
     },
     "moza_pithouse": {
       "label": "MOZA Pit House",
@@ -71,7 +80,7 @@
     },
     "simhub": {
       "label": "SimHub",
-      "approved_version": "9.11.17",
+      "approved_version": "9.4.2",
       "minimum_version": "9.0.0",
       "exe_name": "SimHubWPF.exe",
       "registry_key": "HKLM\\SOFTWARE\\SimHub",
@@ -95,12 +104,14 @@
     "sensit_haptics": {
       "label": "Sensit Seat Haptics",
       "optional": true,
-      "approved_version": "0.10.3",
-      "minimum_version": "0.10.3",
-      "exe_name": "simracing.exe",
-      "install_path_hint": "C:\\Program Files\\SensitHaptics SimRacing Cockpit",
+      "approved_version": "2.1.0",
+      "minimum_version": "2.0.0",
+      "exe_name": "SensitApp.exe",
+      "registry_key": "HKLM\\SOFTWARE\\Sensit\\SensitApp",
+      "registry_value": "Version",
+      "install_path_hint": "C:\\Program Files\\Sensit",
       "update_url": "https://sensithaptics.com/pages/downloads",
-      "notes": "No registry entry. Detected via exe path only. Install path: C:\\Program Files\\SensitHaptics SimRacing Cockpit"
+      "notes": "Optional add-on. Only checked on rigs where installed."
     }
   },
   "profiles": {
