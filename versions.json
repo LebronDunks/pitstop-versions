@@ -104,12 +104,11 @@
     "sensit_haptics": {
       "label": "Sensit Seat Haptics",
       "optional": true,
-      "approved_version": "2.1.0",
-      "minimum_version": "2.0.0",
-      "exe_name": "SensitApp.exe",
-      "registry_key": "HKLM\\SOFTWARE\\Sensit\\SensitApp",
+      "approved_version": "0.10.3",
+      "minimum_version": "0.10.3",
+      "exe_name": "simracing.exe",
       "registry_value": "Version",
-      "install_path_hint": "C:\\Program Files\\Sensit",
+      "install_path_hint": "C:\Program Files\SensitHaptics SimRacing Cockpit",
       "update_url": "https://sensithaptics.com/pages/downloads",
       "notes": "Optional add-on. Only checked on rigs where installed."
     }
